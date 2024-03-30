@@ -9,6 +9,34 @@
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
+@keyframes invertColors {
+    0% {
+      filter: invert(0%);
+   }
+    100% {
+      filter: invert(100%);
+   }
+  }
+
+
+
+
+.message-icon{
+position: fixed;    
+right: 2vw;
+bottom:2vw;
+z-index: 10;
+animation: invertColors 3s infinite;
+}
+.image-message{
+    width: 45px;
+    z-index: 10;
+
+
+
+}
+
+
 
 body{
     font-family: 'Gotham SSm A', 'Gotham SSm B', arial, sans-serif;
@@ -162,6 +190,7 @@ article{
 
 }
 header{
+    z-index: 10;
 width: 100vw;
 position: fixed;
 
